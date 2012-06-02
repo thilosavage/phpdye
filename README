@@ -2,9 +2,9 @@ PHP Dye is a light-weight syntax highlighting solution for PHP code that works l
 
 Usage:
 
-1. Include code.php
+- Require phpdye.php
 
-2. Put code in between phpdye::start() and phpdye::end()
+- Put code as-is between phpdye::start() and phpdye::end()
 
 Example: 
 
