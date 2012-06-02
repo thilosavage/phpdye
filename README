@@ -1,20 +1,16 @@
-Light-weight syntax highlighting for PHP that -
-	- Is server-side
-	- Requires no boiler plate code
-	- Works like markup
-	- No escaping characters or forcing line breaks
+PHP Dye is a light-weight syntax highlighting solution for PHP code that works like psuedo mark-up tags.
 
 Usage:
 
 1. Include code.php
 
-2. Put code in between code::start() and code::end()
+2. Put code in between phpdye::start() and phpdye::end()
 
 Example: 
 
-<?php code::start();?>
+<?php phpdye::start();?>
 
 // code...
 $blah = "hihi";
 
-<?php code::end();>
+<?php phpdye::end();>
