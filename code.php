@@ -1,6 +1,22 @@
 <?php
-class code {
 
+/**
+ * Autoloadify
+ *
+ * Highlight PHP using pseudo markup tags
+ *
+ * @package		TaS PHP Syntax Highlight 
+ * @author		Thilo Savage
+ * @copyright		Copyright (c) 2012
+ * @since		Version 0.001
+ */
+static class code {
+
+	/*
+	 *	@brief Wrap HTML around code
+	 *	@param	string	Highlighted code to wrap
+	 *	@return	string	Wrapped code
+	 */
 	private function _wrapper($code)
 	{
 		$html = "<pre style='color: white; background-color: black; padding: 4px 15px;'>";
@@ -8,14 +24,20 @@ class code {
 		$html .= "</pre>";
 		return $html;
 	}
-
-	function start()
+	
+	/*
+	 *	Opening tag - start output buffering
+	 */
+	public static function start()
 	{
 		ob_start();
 	}
 
-
-	function end($colors = true)
+	/*
+	 *	Closing tag - process code and wrap
+	 *	@param	bool	apply coloring
+	 */	
+	public static function end($colors = true)
 	{
 		$str= ob_get_clean();
 
