@@ -1,0 +1,20 @@
+Light-weight syntax highlighting for PHP that -
+	- Is server-side
+	- Requires no boiler plate code
+	- Works like markup
+	- No escaping characters or forcing line breaks
+
+Usage:
+
+1. Include code.php
+
+2. Put code in between code::start() and code::end()
+
+Example: 
+
+&lt;?php code::start();?&gt;
+
+// code...
+$blah = "hihi";
+
+&lt;?php code::end();&gt;
