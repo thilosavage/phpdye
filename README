@@ -12,9 +12,9 @@ Usage:
 
 Example: 
 
-&lt;?php code::start();?&gt;
+<?php code::start();?>
 
 // code...
 $blah = "hihi";
 
-&lt;?php code::end();&gt;
+<?php code::end();>
